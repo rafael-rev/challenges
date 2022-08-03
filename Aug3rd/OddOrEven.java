@@ -1,3 +1,4 @@
+package Aug3rd;
 import java.util.Scanner;
 
 public class OddOrEven {
