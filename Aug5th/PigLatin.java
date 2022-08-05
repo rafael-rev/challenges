@@ -8,10 +8,14 @@ public class PigLatin {
         System.out.print("Please enter a word to convert: ");
         String input = scanner.nextLine();
         scanner.close();
-        // parse the string
-        String remainingStr = input.substring(1);
-        char firstChar = input.charAt(0);
-        // recombine string
-        System.out.println(remainingStr+firstChar+"ay");
+        System.out.println(toPigLatin(input));
+        
+    }
+
+    public static String toPigLatin(String word){
+        StringBuilder sb = new StringBuilder(word);
+
+        sb.deleteCharAt(0).append(word.charAt(0) + "ay");
+        return sb.toString();
     }
 }
