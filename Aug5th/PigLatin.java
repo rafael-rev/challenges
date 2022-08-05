@@ -13,8 +13,5 @@ public class PigLatin {
         char firstChar = input.charAt(0);
         // recombine string
         System.out.println(remainingStr+firstChar+"ay");
-
-        
-
     }
 }
