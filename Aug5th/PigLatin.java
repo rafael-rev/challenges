@@ -14,7 +14,7 @@ public class PigLatin {
 
     public static String toPigLatin(String word){
         StringBuilder sb = new StringBuilder(word);
-
+        
         sb.deleteCharAt(0).append(word.charAt(0) + "ay");
         return sb.toString();
     }
